@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function CreateTodo() {
-    const HOST = process.env.HOST || "0.0.0.0:4000"
+    const HOST = process.env.HOST
     const nav =  useNavigate()
     const [formData, setFormData] = useState({
         title: '',

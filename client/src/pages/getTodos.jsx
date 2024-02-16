@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 function GetTodos() {
-    const HOST = process.env.HOST || "0.0.0.0:4000"
+    const HOST = process.env.HOST
     const [todos,setTodos] = useState([])
     const [isLoading,setIsLoading] = useState(false)
     useEffect(()=>{
